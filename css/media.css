@@ -1,0 +1,41 @@
+@media (max-width: 1199px) {
+    html {
+        font-size: 8px;
+    }
+
+}
+
+@media (max-width: 991px) {
+    html {
+        font-size: 7px;
+    }
+
+    .visible-lg {
+        display: none;
+    }
+
+    .m-menu-link {
+        display: block;
+
+    }
+
+}
+
+@media (max-width: 564px) {
+    .table {
+        height: auto;
+    }
+
+    .price-tags {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .price-tag {
+        height: 300px;
+
+    }
+
+}
