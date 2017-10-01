@@ -16,26 +16,163 @@
 
     .m-menu-link {
         display: block;
-
     }
 
+    .footer-menu > ul > li:nth-child(6) > a {
+        margin: 0;
+    }
+
+    .table {
+        padding-top: 7rem;
+    }
 }
 
-@media (max-width: 564px) {
+@media (max-width: 766px) {
+    footer {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .footer-menu > ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-menu > ul > li  {
+        margin-top: 15px;
+    }
+
+    .footer-menu-link {
+        font-size: 2rem;
+    }
+
+    .footer-menu > ul > li:nth-child(6) {
+        margin: 20px 0 10px;
+
+    }
+    footer > .logo > img {
+        margin-top: 10px;
+    }
+
+    .main-text h1 {
+        font-size: 8rem;
+    }
+
+    .main-text p {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 555px) {
+
+    .main {
+        height: auto;
+        min-height: 500px;
+    }
+
+    .main-text p {
+        padding: 0 10px;
+    }
+
     .table {
         height: auto;
     }
 
+    .table-header p {
+        width: auto;
+        padding: 0 10px;
+    }
+
     .price-tags {
         flex-direction: column;
-        justify-content: center;
         align-items: center;
+    }
+
+    .price-tags > .price-tag:nth-child(3) {
+        margin-bottom: 10px;
+    }
+
+    .cta-btn {
+        margin-bottom: 5px;
+        font-size: 1.5rem;
+        margin-left: 5px;
+    }
+
+    .footer-get-started {
+        font-size: 1.5rem;
+    }
+
+
+    .price-tag {
+        margin-top: 10px;
+        height: auto;
+    }
+
+    .legal {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .legal > .social-links {
+        order: 0;
+        margin-top: 10px;
+    }
+
+    .legal > .social-links a i {
+        font-size: 2rem;
+    }
+
+    .legal > .copy {
+        order: 1;
+        margin-top: 10px;
+    }
+
+    .main-text h1 {
+        font-size: 7rem;
 
     }
 
-    .price-tag {
-        height: 300px;
+    .header > .logo > img, footer > .logo > img {
+        width: 165px;
 
     }
 
 }
+
+@media (max-width: 325px) {
+    .price-tag {
+        width: auto;
+    }
+    .table {
+        height: auto;
+    }
+
+    .header img {
+        display: none;
+    }
+
+    .main-text span:before, .main-text span:after {
+        display: none;
+    }
+
+    .footer-menu  {
+        width: auto;
+    }
+
+    .copy p {
+        text-align: center;
+    }
+}
+
+
+
+@media (max-height: 477px) {
+    .table {
+        height: auto;
+    }
+    
+}
+
+

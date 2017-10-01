@@ -48,7 +48,7 @@ body {
     z-index: 2;
 }
 
-.menu ul {
+.menu  {
     display: flex;
     justify-content: space-around;
     list-style: none;
@@ -84,11 +84,16 @@ body {
 
 .main-text span {
     display: inline-block;
+    font-size: 1.3rem;
 }
 
 .main-text h1 {
     font-size: 80px;
     margin: 0.5rem 0;
+}
+
+.main-text p {
+    font-size: 1.2rem;
 }
 
 .main-text span::after {
@@ -118,7 +123,7 @@ body {
 .table {
     height: 100vh;
     background-color: #f9fafc;
-    padding-top: 10rem;
+    padding-top: 7rem;
 }
 
 .table-header {
@@ -181,11 +186,17 @@ body {
     height: 400px;
     align-items: center;
     transition: 0.2s;
+    padding-bottom: 10px;
 }
 
 .price-tag:hover {
     cursor: pointer;
     box-shadow: 0px 0px 81.88px 10.12px rgba(204, 204, 223, 0.71);
+}
+
+.price-tag img {
+    width: 110px;
+    height: 110px;
 }
 
 .price-tag span {
@@ -196,6 +207,7 @@ body {
 
 .price-tag p {
     color: #9fa4af;
+    font-size: 1.3rem;
 }
 
 .price-tag h4 {
@@ -234,7 +246,8 @@ body {
 .call-to-action {
     padding: 10rem 0;
     color: white;
-    background: url("../img/table/cta-background.png") no-repeat;
+    background: url("../img/table/cta-background.png") no-repeat center;
+    background-size: cover;
     text-align: center;
     position: relative;
     /*height: 50vh;*/
@@ -252,6 +265,7 @@ body {
     font-size: 6rem;
     font-weight: 500;
     margin: 1rem auto 2rem;
+    padding: 0 10px;
 
 }
 
@@ -283,17 +297,18 @@ footer {
 }
 
 .footer-menu {
-    width: 50%;
+    width: 60%;
 }
 
 .footer-menu ul {
     display: flex;
     justify-content: space-around;
     list-style: none;
+    padding: 0;
 }
 
 .footer-menu-link {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     text-decoration: none;
     font-weight: 500;
 }
@@ -325,31 +340,72 @@ footer {
     justify-content: space-between;
     align-items: center;
 }
+
 .social-links a {
     margin: 0 1rem;
 }
+
 .social-links a > i {
     color: #b4b4bb;
     font-size: 1.5rem;
 }
-.m-menu-link {
-    color: white;
-    font-size:3rem;
 
-}
 
 .m-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     margin: 0;
     padding: 0;
     position: fixed;
-    top: 0;
     right: 0;
-    height: 100vh;
+    top: 0;
+    height: 100%;
     width: 100%;
-    text-align: center;
+    z-index: 9999;
     list-style: none;
-    font-size: 3rem;
+    font-size: 4rem;
     line-height: 6rem;
     background-color: #6e45e2;
-    z-index: ;
+    color: #fff;
+    transition: 0.2s;
+    transform: translateX(100%);
+    overflow: auto;
 }
+
+.m-menu__active {
+    transform: translateX(0%);
+
+}
+
+.m-menu-link {
+    color: white;
+    display: none;
+    font-size: 3rem;
+}
+
+.m-menu-link:hover {
+    color: black;
+}
+
+.close-menu {
+    position: fixed;
+    top: 1rem;
+    right: 5rem;
+    font-size: 5rem;
+    color: #fff;
+}
+
+.close-menu:hover {
+    cursor: pointer;
+}
+
+.m-menu > li:nth-child(7) > a {
+    margin: 0;
+}
+
+.m-menu .menu-link {
+    font-size: 2.5rem;
+}
+

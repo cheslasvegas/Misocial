@@ -2,7 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>FlexBoxSite1</title>
+
     <link href="https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700,900" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
@@ -10,6 +12,15 @@
     <link rel="stylesheet" href="css/media.css">
 </head>
 <body>
+<ul class="m-menu">
+    <li class="close-menu">&times</li>
+    <li><a href="#" class="menu-link">Home</a></li>
+    <li><a href="#" class="menu-link">WHY MISOCIAL</a></li>
+    <li><a href="#" class="menu-link">Features</a></li>
+    <li><a href="#" class="menu-link">Articles</a></li>
+    <li><a href="#" class="menu-link">Pricing</a></li>
+    <li><a href="#" class="menu-link get-started-btn">get started</a></li>
+</ul>
 <div class="main">
     <div class="main-overlay"></div>
     <div class="header">
@@ -19,30 +30,27 @@
         <a href="#" class="m-menu-link">
             <i class="fa fa-bars"></i>
         </a>
-            <ul class="m-menu">
-                <li><a href="#" class="menu-link">Home</a></li>
-                <li><a href="#" class="menu-link">WHY MISOCIAL</a></li>
-                <li><a href="#" class="menu-link">Features</a></li>
-                <li><a href="#" class="menu-link">Articles</a></li>
-                <li><a href="#" class="menu-link">Pricing</a></li>
-                <li><a href="#" class="menu-link get-started-btn">get started</a></li>
-            </ul>
-        <div class="menu visible-lg">
-        </div>
-
+        <ul class="menu visible-lg">
+            <li><a href="#" class="menu-link">Home</a></li>
+            <li><a href="#" class="menu-link">WHY MISOCIAL</a></li>
+            <li><a href="#" class="menu-link">Features</a></li>
+            <li><a href="#" class="menu-link">Articles</a></li>
+            <li><a href="#" class="menu-link">Pricing</a></li>
+            <li><a href="#" class="menu-link get-started-btn">get started</a></li>
+        </ul>
     </div>
     <div class="main-text">
         <span>SOCIAL MARKETING & ANALYTICS</span>
         <h1>Pricing Table</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodcommodo</p>
     </div>
-    <a class="main-arrow" href="#">
+    <a class="main-arrow" href="#table">
         <div class="arrow-down">
             <img src="img/arrow.png" alt="arrow">
         </div>
     </a>
 </div>
-<div class="table">
+<div id="table" class="table">
     <div class="table-header">
         <span class="table-subtitle">MIsocial</span>
         <h2>Select a Plan</h2>
@@ -79,13 +87,10 @@
     </div>
 </div>
 <div class="call-to-action">
-    <!--<div class="call-to-action-overlay"></div>-->
-    <!--<div class="wrap">-->
     <span>SOCAL MARKETING & ANALYTICS</span>
     <p>Take control of your data</p>
     <button class="cta-btn">get started</button>
     <button class="cta-btn">explore features</button>
-    <!--</div>-->
 </div>
 <footer>
     <div class="logo">
@@ -117,7 +122,24 @@
 </div>
 
 
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script>
+    $(function () {
+        var link = $('.m-menu-link');
+        var close = $('.close-menu');
+        var menu = $('.m-menu');
+        link.on('click', function (event) {
+            event.preventDefault();
+            menu.toggleClass('m-menu__active');
 
+        });
+        close.on('click', function (event) {
+            event.preventDefault();
+            menu.toggleClass('m-menu__active');
+
+        })
+    })
+</script>
 </body>
 </html>
 

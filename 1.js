@@ -1,5 +1,8 @@
 "use strict";
 'wegergergerger'
-ergergerger
 ergegegerg
 gergegergq
+
+function gege() {
+    
+}
