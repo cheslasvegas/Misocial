@@ -48,7 +48,7 @@ body {
     z-index: 2;
 }
 
-.menu  {
+.menu {
     display: flex;
     justify-content: space-around;
     list-style: none;
@@ -345,7 +345,6 @@ footer {
     color: #b4b4bb;
     font-size: 1.5rem;
 }
-
 
 .m-menu {
     display: flex;

@@ -40,7 +40,7 @@
         align-items: center;
     }
 
-    .footer-menu > ul > li  {
+    .footer-menu > ul > li {
         margin-top: 15px;
     }
 
@@ -52,6 +52,7 @@
         margin: 20px 0 10px;
 
     }
+
     footer > .logo > img {
         margin-top: 10px;
     }
@@ -104,7 +105,6 @@
         font-size: 1.5rem;
     }
 
-
     .price-tag {
         margin-top: 10px;
         height: auto;
@@ -145,6 +145,7 @@
     .price-tag {
         width: auto;
     }
+
     .table {
         height: auto;
     }
@@ -157,7 +158,7 @@
         display: none;
     }
 
-    .footer-menu  {
+    .footer-menu {
         width: auto;
     }
 
@@ -166,13 +167,11 @@
     }
 }
 
-
-
 @media (max-height: 477px) {
     .table {
         height: auto;
     }
-    
+
 }
 
 
